@@ -1,0 +1,19 @@
+{
+  "name": "notionai-terminal-connect",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Temporary authenticated MCP bridge from Notion AI to a Linux terminal and workspace files.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "check": "node --check src/server.js && node --test",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.17.4",
+    "zod": "^3.25.76"
+  }
+}
